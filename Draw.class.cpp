@@ -8,12 +8,11 @@ Draw::Draw( void ) {
 }
 
 Draw::~Draw ( void ) {
-
 }
 
-void Draw::Redraw(Player hero, BulletEvent *bullets, FoodEvent *foods) {
+void Draw::Redraw(Player hero, FoodEvent *foods) {
   mvprintw(hero.getY(), hero.getX(), ">");
-  Bullet *allbullets = bullets->getBullets();
+  // Bullet *allbullets = bullets->getBullets();
 	Food *allEmemies = foods->getEnemies();
   for (int i = 0; i < bullets->getBulletCount(); i++) {
       mvprintw(allbullets[i].getY(), allbullets[i].getX(), "-");

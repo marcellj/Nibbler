@@ -1,8 +1,8 @@
-NAME = ft_retro
+NAME = snake
 
-SRC = main.cpp Game.class.cpp Player.class.cpp Draw.class.cpp Bullet.class.cpp BulletEvent.class.cpp CollisionDection.class.cpp Enemy.class.cpp EnemyEvent.class.cpp
+SRC = main.cpp CollisionDection.class.cpp Draw.class.cpp Food.class.cpp FoodEvent.class.cpp Game.class.cpp Snake.class.cpp
 
-OFILES = main.o Game.class.o Player.class.o Draw.class.o Bullet.class.o BulletEvent.class.o CollisionDection.class.o
+OFILES = main.o CollisionDection.class.o Draw.class.o Food.class.o FoodEvent.class.o Game.class.o Snake.class.o
 
 FLAGS = -Wall -Wextra -Werror
 

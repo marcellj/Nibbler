@@ -1,10 +1,9 @@
-#ifndef Game_HPP
-#define Game_HPP
-#include "BulletEvent.class.hpp"
+#ifndef GAME_HPP
+#define GAME_HPP
+#include "FoodEvent.class.hpp"
 #include "Draw.class.hpp"
 #include "Snake.class.hpp"
 #include "CollisionDection.class.hpp"
-#include "FoodEvent.class.hpp"
 #include <ctime>
 #include <iostream>
 #include <sys/time.h>
@@ -24,6 +23,7 @@ public:
   Game ( Game const & copy );
   Game & operator=( Game const & copy );
   ~Game ( void );
+
   void inputHandle(int c);
   Snake getSnake();
   void setHero(Snake new_snake);
@@ -31,4 +31,5 @@ public:
 };
 
 std::ostream & operator<<(std::ostream & o, Game const & rhs);
+
 #endif

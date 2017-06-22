@@ -1,5 +1,5 @@
-#ifndef FoodEvent_HPP
-#define FoodEvent_HPP
+#ifndef FOODEVENT_HPP
+#define FOODEVENT_HPP
 #include <ncurses.h>
 #include <iostream>
 #include <string>
@@ -17,6 +17,7 @@ public:
 	FoodEvent ( FoodEvent const & copy );
 	FoodEvent & operator=( FoodEvent const & copy );
 	~FoodEvent ( void );
+
 	void moveEnemies();
 	void genFood(void);
 	void desFood(int pos);
@@ -26,4 +27,5 @@ public:
 };
 
 std::ostream & operator<<(std::ostream & o, FoodEvent const & rhs);
+
 #endif

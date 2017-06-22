@@ -1,20 +1,23 @@
-#ifndef CPP_BOOTCAMP_ENEMY_CLASS_HPP
-#define CPP_BOOTCAMP_ENEMY_CLASS_HPP
+#ifndef FOOD_HPP
+#define FOOD_HPP
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
-class Enemy {
+
+class Food {
 private:
 	int	x;
 	int	y;
 	bool active;
+
 public:
-	Enemy ( void );
-	Enemy ( int const x, int const y);
-	Enemy ( Enemy const & copy );
-	Enemy & operator=( Enemy const & copy );
-	Enemy & operator++();
-	~Enemy ( void );
+	Food ( void );
+	Food ( int const x, int const y);
+	Food ( Food const & copy );
+	Food & operator=( Food const & copy );
+	Food & operator++();
+	~Food ( void );
+
 	int getX( void ) const;
 	void setX( int const value );
 	int getY( void ) const;
@@ -22,4 +25,5 @@ public:
 	void setActive(void);
 	void Move( void );
 };
-#endif //CPP_BOOTCAMP_ENEMY_CLASS_HPP
+
+#endif

@@ -1,5 +1,5 @@
-#ifndef Snake_HPP
-#define Snake_HPP
+#ifndef SNAKE_HPP
+#define SNAKE_HPP
 #include <iostream>
 
 class Snake {
@@ -12,6 +12,7 @@ public:
   Snake ( Snake const & copy );
   Snake & operator=( Snake const & copy );
   ~Snake ( void );
+
   int getX( void ) const;
   void setX( int const value );
   int getY( void ) const;
@@ -23,4 +24,5 @@ public:
 };
 
 std::ostream & operator<<(std::ostream & o, Snake const & rhs);
+
 #endif
