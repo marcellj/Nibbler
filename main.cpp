@@ -1,8 +1,9 @@
-#include "Game.class.hpp"
+#include "SnakeClass.hpp"
+#include "SnakePosition.hpp"
 
-int main(void) {
-  Game the_game;
+int   main() {
+    SnakeClass snake_game;
 
-  the_game.start();
-  return 0;
+    snake_game.startGame();
+    return (0);
 }
