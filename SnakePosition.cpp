@@ -14,11 +14,12 @@ SnakePosition::~SnakePosition() {
 
 }
 
-//SnakePosition::SnakePosition(SnakePosition const &src) {
-//    this->operator=(src);
-//}
+SnakePosition::SnakePosition(SnakePosition const &src) {
+  *this = src;
+}
 
-//SnakePosition &SnakePosition::operator=(SnakePosition const &rhs) {
-//    return *this;
-//}
-
+SnakePosition &SnakePosition::operator=(SnakePosition const &rhs) {
+  if(this != &rhs)
+    *this = rhs
+  return *this;
+}
