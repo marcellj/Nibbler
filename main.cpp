@@ -5,6 +5,6 @@
 int   main() {
     StartGame nibbler;
 
-    nibbler;
+    nibbler.startGame();
     return (0);
 }

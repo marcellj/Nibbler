@@ -15,6 +15,8 @@ public:
   ~StartGame();
   StartGame(StartGame const &src);
   StartGame &operator=(StartGame const &rhs);
+
+  void startGame();
 };
 
 #endif

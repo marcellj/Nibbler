@@ -20,6 +20,6 @@ SnakePosition::SnakePosition(SnakePosition const &src) {
 
 SnakePosition &SnakePosition::operator=(SnakePosition const &rhs) {
   if(this != &rhs)
-    *this = rhs
+    *this = rhs;
   return *this;
 }
