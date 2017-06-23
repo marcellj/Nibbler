@@ -1,9 +1,10 @@
 #include "SnakeClass.hpp"
 #include "SnakePosition.hpp"
+#include "StartGame.hpp"
 
 int   main() {
-    SnakeClass snake_game;
+    StartGame nibbler;
 
-    snake_game.startGame();
+    nibbler;
     return (0);
 }

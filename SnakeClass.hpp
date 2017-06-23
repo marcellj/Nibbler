@@ -17,8 +17,6 @@ public:
 	SnakeClass(SnakeClass const &src);
   SnakeClass &operator=(SnakeClass const &rhs);
 
-  void    startGame();
-
 private:
   int   _points;
 	int		_delay;

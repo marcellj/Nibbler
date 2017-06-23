@@ -164,17 +164,3 @@ void SnakeClass::moveSnake() {
     addch(_snake_head);
     refresh();
 }
-
-void SnakeClass::startGame() {
-    while(1) {
-        if(collision()) {
-            move(26, 34);
-            printw("***GAME OVER DUDE***");
-            break;
-        }
-        moveSnake();
-        if(_direction == 'q')
-            break;
-        usleep(_delay);
-    }
-}
