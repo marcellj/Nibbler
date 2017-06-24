@@ -8,13 +8,13 @@
 
 class SnakePosition {
 public:
-    SnakePosition();
-    SnakePosition(int col, int row);
-    ~SnakePosition();
-//    SnakePosition(SnakePosition const &src);
-//    SnakePosition &operator=(SnakePosition const &rhs);
+  SnakePosition();
+  SnakePosition(int col, int row);
+  ~SnakePosition();
+  SnakePosition(SnakePosition const &src);
+  SnakePosition &operator=(SnakePosition const &rhs);
 
-    int x, y;
+  int x, y;
 };
 
 #endif
